@@ -1,0 +1,26 @@
+apiVersion: chain.djtx.network/v1alpha1
+kind: Avalanchego
+metadata:
+  name: avalanchego-test-validator
+spec:
+  # Add fields here
+  deploymentName: test-validator
+  nodeCount: 5
+  image: avaplatform/avalanchego
+  tag: v1.7.3
+  env:
+  - name: AVAGO_LOG_LEVEL
+    value: debug
+  resources:
+    limits:
+      cpu: 500m
+      memory: 1Gi
+  podLabels:
+    test: test
+  podAnnotations:
+    test: test
+  # Example when using pre-defined secrets
+  # existingSecrets:
+  # - custom-avago-test-validator-0-key
+  # - custom-avago-test-validator-1-key
+  # - custom-avago-test-validator-2-key

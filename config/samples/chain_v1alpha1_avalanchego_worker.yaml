@@ -1,0 +1,22 @@
+apiVersion: chain.djtx.network/v1alpha1
+kind: Avalanchego
+metadata:
+  name: avalanchego-test-worker
+spec:
+  deploymentName: test-worker
+  bootstrapperURL: avago-test-validator-0-service
+  nodeCount: 2
+  image: avaplatform/avalanchego
+  tag: v1.6.0
+  env:
+  - name: AVAGO_LOG_LEVEL
+    value: debug
+  resources:
+    limits:
+      cpu: "1"
+      memory: 2Gi
+    requests:
+      cpu: 500m
+      memory: 1Gi
+# Genesis is in deployed validator status
+  genesis: ''
