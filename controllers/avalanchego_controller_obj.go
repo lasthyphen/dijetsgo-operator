@@ -27,7 +27,7 @@ import (
 
 	chainv1alpha1 "github.com/lasthyphen/dijetsgo-operator/api/v1alpha1"
 
-	avalanchegoConstants "github.com/lasthyphen/dijetsgo/utils/constants"
+	avalanchegoConstants "github.com/lasthyphen/dijigo/utils/constants"
 )
 
 func (r *AvalanchegoReconciler) avagoConfigMap(

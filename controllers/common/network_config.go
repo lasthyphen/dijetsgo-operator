@@ -27,9 +27,9 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/lasthyphen/dijetsgo/ids"
-	"github.com/lasthyphen/dijetsgo/utils/constants"
-	"github.com/lasthyphen/dijetsgo/utils/hashing"
+	"github.com/lasthyphen/dijigo/ids"
+	"github.com/lasthyphen/dijigo/utils/constants"
+	"github.com/lasthyphen/dijigo/utils/hashing"
 )
 
 type Network struct {
