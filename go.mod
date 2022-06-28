@@ -3,7 +3,7 @@ module github.com/lasthyphen/dijetsgo-operator
 go 1.16
 
 require (
-	github.com/lasthyphen/dijetsgo v0.2.0
+	github.com/lasthyphen/dijigo v0.2.0
 	github.com/go-logr/logr v0.4.0
 	github.com/google/go-cmp v0.5.6 // indirect
 	github.com/onsi/ginkgo v1.16.4
